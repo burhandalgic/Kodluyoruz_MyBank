@@ -7,17 +7,28 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class UpdateBrandRequest {
+public class UpdateCustomerRequest {
 
-    @NotNull
-    @NotBlank
-    private int id ;
+    private int id;
 
-    @NotNull
-    @NotBlank
-    @Size(min=2, max=30)
+    @Size (min=2, max=30)
     private String name;
+
+
+    @Size (min=2, max=30)
+    private String surname;
+
+    private LocalDate birth;
+
+    @Size (min=2, max=30)
+    private String birth_place;
+
+    private long phoneNumber;
+
+
 }

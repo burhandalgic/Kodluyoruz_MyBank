@@ -1,11 +1,12 @@
 package com.burhan.kodluyoruzBitirmeMyBank.repository;
-import com.burhan.kodluyoruzBitirmeMyBank.dto.requests.CreatCustomerRequest;
 import com.burhan.kodluyoruzBitirmeMyBank.entity.Customer;
+import com.burhan.kodluyoruzBitirmeMyBank.entity.NormalAccount;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface CustomerRepository extends JpaRepository<Customer,Integer> {
+import java.util.UUID;
+
+public interface NormalAcoountRepository extends JpaRepository<NormalAccount, UUID> {
 
 
-
-
+    void deleteById(UUID id);
 }

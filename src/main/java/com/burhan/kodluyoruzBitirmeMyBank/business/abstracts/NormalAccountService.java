@@ -1,13 +1,21 @@
 package com.burhan.kodluyoruzBitirmeMyBank.business.abstracts;
 
 import com.burhan.kodluyoruzBitirmeMyBank.dto.requests.CreatCustomerRequest;
+import com.burhan.kodluyoruzBitirmeMyBank.dto.requests.CreatNormalAccountRequest;
 import com.burhan.kodluyoruzBitirmeMyBank.dto.requests.UpdateCustomerRequest;
+import com.burhan.kodluyoruzBitirmeMyBank.dto.requests.UpdateNormalAccountRequest;
 import com.burhan.kodluyoruzBitirmeMyBank.entity.Customer;
+import com.burhan.kodluyoruzBitirmeMyBank.entity.NormalAccount;
 
-public interface CustomerService {
+import java.util.UUID;
 
-    Customer addCustomer(CreatCustomerRequest creatCustomerRequest);
-    void delete (int id);
-    void update (UpdateCustomerRequest updateCustomerRequest);
+public interface NormalAccountService {
+
+
+
+    NormalAccount add (CreatNormalAccountRequest creatNormalAccountRequest);
+
+    void delete (UUID id);
+    void update (UpdateNormalAccountRequest updateNormalAccountRequest);
 
 }

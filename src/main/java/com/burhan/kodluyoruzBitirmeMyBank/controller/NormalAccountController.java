@@ -1,4 +1,4 @@
-package com.burhan.kodluyoruzBitirmeMyBank.controller.controller;
+package com.burhan.kodluyoruzBitirmeMyBank.controller;
 import com.burhan.kodluyoruzBitirmeMyBank.business.abstracts.NormalAccountService;
 import com.burhan.kodluyoruzBitirmeMyBank.dto.requests.CreatNormalAccountRequest;
 import com.burhan.kodluyoruzBitirmeMyBank.dto.requests.UpdateNormalAccountRequest;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/api/normalAccount")
+@RequestMapping("/api/v1/normalAccount")
 @AllArgsConstructor
 
 public class NormalAccountController {
@@ -44,3 +44,5 @@ public class NormalAccountController {
 
 
 }
+
+
