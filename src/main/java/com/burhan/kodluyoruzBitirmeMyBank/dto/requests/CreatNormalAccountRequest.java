@@ -1,5 +1,9 @@
 package com.burhan.kodluyoruzBitirmeMyBank.dto.requests;
 
+import com.burhan.kodluyoruzBitirmeMyBank.common.CurrencyEnum;
+import com.burhan.kodluyoruzBitirmeMyBank.entity.Customer;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -12,27 +16,16 @@ import java.time.LocalDate;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CreatCustomerRequest {
+public class CreatNormalAccountRequest {
 
-    @NotNull
-    @NotBlank
-    @Size (min=2, max=30)
-    private String name;
+    private double sumMoney=0;
 
-    @NotNull
-    @NotBlank
-    @Size (min=2, max=30)
-    private String surname;
+    @Enumerated(EnumType.STRING)
+    private CurrencyEnum currency;
 
-    @NotNull
-    private LocalDate birth;
+    private int customer_id;
 
-    @NotNull
-    @Size (min=2, max=30)
-    private String birth_place;
 
-    @NotNull
-    private long phoneNumber;
 
 
 

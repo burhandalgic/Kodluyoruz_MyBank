@@ -1,4 +1,4 @@
-package org.kodluyoruz.mybank.Accounts;
+package com.burhan.kodluyoruzBitirmeMyBank.common;
 
 public enum CurrencyEnum {
     TRY,

@@ -1,7 +1,6 @@
-package kodlama.io.rentACar.core.utilities.mappers;
+package com.burhan.kodluyoruzBitirmeMyBank.common;
 
 import org.modelmapper.ModelMapper;
-import org.springframework.stereotype.Service;
 
 public interface ModelMapperService {
     ModelMapper forResponse();
